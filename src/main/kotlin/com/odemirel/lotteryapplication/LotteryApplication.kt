@@ -22,7 +22,6 @@ fun main(args: Array<String>) {
     runApplication<LotteryApplication>(*args)
 }
 
-
 @RestController
 class LottoController {
 
@@ -42,12 +41,10 @@ class LottoController {
         val numOfDrawing = drawing.size
         return "Successfully loaded. Number of drawings loaded: $drawing"
     }
-
-
 }
 
 @Service
-class LottoService {
+ class LottoService {
 
     @Autowired
     lateinit var lottoData: LottoData
